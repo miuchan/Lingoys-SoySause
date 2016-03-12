@@ -1,0 +1,228 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: #fff;
+    font: 16px/1.5 Lato, Arial, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", "WenQuanYi Microhei", sans-serif;
+	background-color: gray;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.2rem;
+	font-weight: 100;
+	color: #A1887F;
+}
+p {
+	font-size: 0.8rem;
+}
+hr {
+	width: 60%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 50px;
+}
+header, nav, footer, section, div {
+  box-sizing: border-box;
+}
+
+/* header */
+header {
+	display: flex;
+	flex-wrap: wrap;
+	position: fixed;
+	top: 0;
+	z-index: 999;
+	height: 56px;
+	width: 100%;
+	background-color: #3E2723;
+	overflow: hidden;
+}
+.header-logo {
+	height: 100%;
+	width: 40%;
+}
+.menu {
+	display: block;
+	width: 60%;
+}
+.menu-btn {
+	float: right;
+	height: 40px;
+	width: 40px;
+	margin-top: 8px;
+	margin-right: 6px;
+	border: 0;
+	outline: none;
+	background-color: rgba(0, 0, 0, 0);
+}
+.nav {
+	display: block;
+	position: fixed;
+	z-index: 233;
+	width: 0;
+	height: 0;
+	max-height: 210px;
+	top: 56px;
+	right: 0;
+	background-color: #3E2723;
+	overflow: scroll;
+}
+.nav-in {
+	width: 50%;
+	height: 100%;
+	padding: 15px;
+	transition: .2s ease-in;
+}
+.nav-item {
+	display: block;
+	padding: 10px;
+	text-align: center;
+	font-size: 24px;
+	line-height: 24px;
+}
+.nav-item:not(:first-child) {
+	border-top: 0.12rem solid #8D6E63;
+}
+
+/* main */
+.banner {
+	display: flex;
+	width: 100%;
+	background-image: url('../img/background3.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.banner:before {
+	content: "";
+	display: block;
+	padding-top: 75%;
+}
+.banner-wrapper {
+	margin: auto;
+	padding-top: 56px;
+	text-align: center;
+	font-family: Papyrus, STXihei, "华文细黑", "Microsoft YaHei", "微软雅黑", sans-serif;
+	font-size: 1rem;
+	text-shadow: 0 0 5px black;
+}
+.banner-wrapper .title {
+	font-size: 3rem;
+	cursor: pointer;
+	transition: linear .3s;
+}
+.banner-wrapper .title:hover {
+	text-shadow: 0 0 10px #fff;
+}
+.introduce {
+	text-align: center;
+	padding: 20px;
+	background-color: #3E2723;
+}
+.introduce-title, .member-list-title {
+	margin-bottom: 20px;
+	font-size: 1.2rem;
+	line-height: 60px;
+}
+.introduce-content {
+	margin: 0 auto 30px auto;
+}
+.introduce-content p {
+	font-size: 1rem;
+	line-height: 2rem;
+}
+
+.member-list {
+	padding: 20px;
+}
+.member-list-title {
+	text-align: center;
+}
+.member-list-item, .member {
+	display: flex;
+	flex-wrap: wrap;
+	margin-left: auto;
+	margin-right: auto;
+}
+.member {
+	max-width: 320px;
+	margin: 15px auto;
+}
+.member-avatar {
+	width: 30%;
+	padding: 4px;
+}
+.member-avatar img {
+	border-radius: 50%;
+}
+.member-introduce {
+	width: 70%;
+	padding: 4px;
+}
+
+/* footer */
+footer {
+	height: 100px;
+	text-align: center;
+	background-color: #3E2723;
+	overflow: hidden;
+}
+
+.social-media {
+	width: 340px;
+	margin: 30px auto 15px auto;
+}
+.social-media-btn {
+	height: 30px;
+	width: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.copyleft {
+	margin-bottom: 2px;
+}
+
+/* media query */
+@media screen and (min-width: 768px) {
+	.header-logo {
+		width: 30%;
+		margin-left: 10%;
+	}
+	.menu {
+		display: none;
+	}
+	.nav {
+		display: block;
+	}
+	.nav-item {
+		float: left;
+		padding: 20px 20px 10px 20px;
+		margin-left: auto;
+		margin-right: auto;
+		transition: linear .25s;
+	}
+	.nav-item:hover {
+		padding-top: 15px;
+	}
+	.banner-wrapper .title {
+		font-size: 6rem;
+	}
+	.banner-wrapper h2 {
+		font-size: 3rem;
+	}
+	.member-list-item {
+		max-width: 1100px;
+	}
+	.member {
+		margin-bottom: 40px;
+	}
+
+}
+
+@media screen and (min-width: 1024px) {
+	.member {
+		max-width: 380px;
+	}
+}

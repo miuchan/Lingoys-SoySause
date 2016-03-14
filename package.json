@@ -1,0 +1,15 @@
+{
+  "name": "soysouce.com",
+  "version": "0.0.1",
+  "description": "The official website of Lingoys!SoySouce.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/miuchan/Lingoys-SoySause.git"
+  },
+  "author": "miuchan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/miuchan/Lingoys-SoySause/issues"
+  },
+  "homepage": "https://github.com/miuchan/Lingoys-SoySause#readme"
+}

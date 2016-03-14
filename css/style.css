@@ -74,7 +74,7 @@ header {
 	width: 50%;
 	height: 100%;
 	padding: 15px;
-	transition: .2s ease-in;
+	transition: .15s ease-in;
 }
 .nav-item {
 	display: block;

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatibale" content="IE=Edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Lingoys!SoySouce, the best soy sauce!">
+    <meta name="description" content="Lingoys!SoySouce, the hot soy sauce!">
     <meta name="keyword" content="Lingoys!SoySouce SoySouce 酱油发烧友 发烧酱油 酱油">
     <title>Lingoys!SoySouce</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:100,400" rel="stylesheet" type="text/css">
@@ -140,7 +140,7 @@
             document.write((new Date()).getFullYear());
             </script> Lingoys!SoySouce.</p>
     </footer>
-    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-2.2.1.min.js"></script>
     <script src="js/jquery.stellar.min.js"></script>
     <script type="text/javascript">
     $(document).ready(function() {
@@ -149,8 +149,6 @@
           $( ".nav" ).toggleClass( "nav-in" );
         });
         $(document).bind("click", function (e) {
-            console.log($(e.target).closest(".nav").length);
-            console.log($(e.target).closest(".menu").length);
             if ($(e.target).closest(".nav").length || $(e.target).closest(".menu").length == 0) {
                 $( ".nav" ).removeClass( "nav-in" );
             }
